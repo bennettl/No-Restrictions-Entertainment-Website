@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#navigation li a.press {
+	background:#0f2a54;
+	color:#89b6f5;
+	text-decoration:underline;
+}
+
+table td img {
+	margin:0 10px 0 0;
+}
+
+table td p {
+	margin:0;
+	padding:0;
+}

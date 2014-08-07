@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+#navigation li a.home {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+/*LEFT COLUMN*/
+
+#leftcol .credit_line {
+	margin:0 auto;
+	width: 207px;
+	padding:18px 0 0 0;
+	text-align:center;
+}
+
+#leftcol .credit_line .headline.subheadline {
+	font-size:17px;
+}
+
+/*RIGHT COLUMN*/
+
+.rightcol_mod .subheader.mrd {
+	background:url(/films/mothers-red-dress/images/title.png) top left no-repeat transparent;
+}
+
+.rightcol_mod .subheader.share {
+	/*background:url(../images/share_banner.png) top left no-repeat transparent;*/
+}

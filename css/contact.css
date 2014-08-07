@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inputText{
+	height: 17px;
+	font: 11px helvetica, sans-serif;
+	color: #393939;
+	font-size: 13px;
+	line-height: 18px;
+	outline: none;
+	border: 1px solid #C7C6C6;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+	.inactiveText{
+		color: #8C8B8B;
+	}
+	
+.inputSubmit{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	background: #3b3b3b;
+	border: 1px solid #3b3b3b;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	cursor: pointer;
+    color: #DBDBDB;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+	.inputSubmit:hover{
+		background: #b6b6b6;
+		color: #3B3B3B;
+	}
+	#contact{
+		width: 935px;
+		min-height: 500px;
+		margin:  0 auto;
+	}
+	#contact #leftContainer{
+		  margin-right: 70px;
+	}
+	#contact #leftContainer, #rightContainer{
+		 float: left;
+		 width: 431px;		  
+		 text-align: center;
+	}	
+	#contact .desc{
+		margin: 10px 0 21px;
+	}
+		#contact .largeTitle{
+			text-align: center;
+		}
+		#contact .inputText{
+			height: 43px;
+			margin-bottom: 20px;
+		}
+		#contact .inputText, #contact .descriptionText{
+			background: #3b3b3b;
+			width: 400px;
+			opacity: .8;
+			color: #eeeeee;
+			padding: 4px 16px 0;
+			font-size: 15px;
+			border: 1px solid #313131;
+			border-radius: 7px;
+			-moz-border-radius: 7px;
+			-webkit-border-radius: 7px;
+			transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+		}
+		#contact .inputText.inactive{
+			color: #a4a4a4;
+		}
+		#contact .inputText:hover,#contact .inputText:focus{
+			background: #313131;
+		}
+		#contact .descriptionText{
+			padding-top: 15px;
+			height: 100px;
+			resize: none;
+		}
+
+.noti{
+	padding-bottom: 15px;
+	color: red;
+	display: none;
+}
+
+/* MailChimp Email Form */
+#mc_embed_signup {
+	margin: 10px -14px 0 0; 
+	clear:left;}
+#mc_embed_signup label {
+	color:#586d89; 
+	padding-bottom:4px; 
+	font-size: 14px; 
+	padding-left: 1px;
+}
+#mc_embed_signup form{
+	padding-left: 0;
+}
+#mc_embed_signup input.email{
+	color: black;
+	height: 13px;
+	border: none;
+	width: 260px;
+	font-size: 13px;
+}
+#mc_embed_signup input.button{
+	height: 30px;
+    color: #000000;
+	background: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px;
+    text-indent: 0;
+}
+#mc_embed_signup input.button:hover{
+	background: #ebebeb;
+}

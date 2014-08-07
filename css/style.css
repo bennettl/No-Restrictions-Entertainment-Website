@@ -1,0 +1,18 @@
+
+
+/* The Film */
+#filmPoster{
+	float: left;
+}
+#filmDesc{
+	float: left;
+    margin-left: 20px;
+    width: 420px;
+}
+/* overwrite */
+
+#leftcol{
+	height: 500px;
+	overflow: auto;
+    width: 760px;
+}

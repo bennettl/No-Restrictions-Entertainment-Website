@@ -1,0 +1,724 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	height:100%;
+}
+
+* {
+	margin : 0;
+	padding : 0;
+}
+
+#logo{
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+body {
+	margin:0;
+	background:url("/images/blue_bg.png") center top fixed no-repeat #010c1b;
+	height:100%;
+	color: #e1e1e1;
+	font-family: "Tahoma", Geneva, Arial, sans-serif;	
+	font-size: 11px;
+	cursor: default;
+	background-size: 100%;
+/*		font-family:  "HelveticaNeue-Light", "Helvetica Neue", "Helvetica", "Arial","sans-serif";
+
+font-weight: 300;
+*/}
+
+a img {
+	border : 0;
+}
+
+a:link, a:visited {
+	color:#2386a0;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:hover {
+	color:#89b6f5;
+}
+
+.float_left {
+	float:left;
+}
+
+.float_right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+.hide {
+	display:none;
+}
+
+.section-divider {
+	height:21px;
+}
+
+.section-divider.solid {
+	height: 1px;
+	margin-bottom: 16px;
+	border-bottom:1px solid #4d5c70;
+}
+
+.section-divider.dashed {
+	height: 18px;
+	margin-bottom: 16px;
+	border-bottom:1px dashed #ffffff;
+}
+
+.section-divider.white {
+	height: 18px;
+	margin-bottom: 16px;
+	border-bottom:1px solid #ffffff;
+	clear: left;
+}
+p {
+	padding:0 0 20px;
+	line-height: 16px;	
+	color: #e1e1e1;
+}
+
+table {
+	width:100%;
+}
+
+li {
+	list-style-type:  none;
+}
+table td {
+	vertical-align:top;
+}
+
+img.border {
+	border: 1px solid #222;	
+}
+
+/*FONT SPECIFIC*/
+.headline {
+	font-family:"PT Sans Narrow", Trebuchet MS, Arial, sans-serif;
+	font-weight:bold;
+}
+
+.caps {
+	text-transform:uppercase;
+}
+
+.last {
+	margin:0 !important;
+}
+
+/*BEGIN LAYOUT PROPERTIES*/
+
+#site_container {
+	width:100%;
+	margin:0 auto;
+	background:url(../images/site_container_bg.png) top left repeat transparent;
+	padding: 0 0 5px 0;
+}
+
+#wrapper {
+	/*width:990px;*/
+	width: 1100px;
+	margin:0 auto;
+}
+
+#header {
+	height:81px;
+}
+
+#header .content {
+	/*width:990px;*/
+	width: 1100px;
+	margin:0 auto;
+	height: 81px;
+}
+
+
+/*START NAVIGATION*/
+
+#topNav {
+	list-style: none;
+	height:35px;
+	padding:30px 0 0;
+	font-size: 16px;
+	margin:0 0 5px;
+	z-index:1000;
+}
+
+#topNav li {
+	border-right: 1px solid #FFFFFF;
+    float: left;
+    padding: 0 14px;
+	text-align: center;
+	height: 21px;
+}
+
+#topNav li a,
+#topNav li a:visited{
+    color: #F1F1F1;
+    display: block;
+    height: 21px;
+    padding: 0 3px 2px 3px;
+}
+
+#topNav li a:hover, #topNav li a.current {
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+#topNav li ul {
+	background:#0F2A54;
+	color: #89B6F5;
+	position: absolute;
+	width: 10em;
+	left: -999em;
+	padding: 0;
+	margin: 0;
+	list-style: none;	
+	z-index:1000;
+}
+
+/*BEGIN CONTENT*/
+
+#content {
+	width: 1074px;
+	min-height: 525px;
+	padding: 20px 11px;
+	overflow: visible;
+}
+
+.watch_now_btn {
+	background:url(../images/main_sprite.png) -13px -235px no-repeat transparent;
+	width:222px;
+	height:31px;
+	display:block;
+}
+
+/* Posters */
+#posters li{
+	position: relative;
+	height: 464px;
+	width: 300px;
+	margin: 20px 0 0 -300px;
+	float: left;
+	cursor: pointer;
+}
+#posters li.current{
+	margin: 0;
+}
+
+#posters{
+	width: 700px;
+	height: 470px;
+	float: left;
+}
+#posterInfo{
+	width: 350px;
+	height: 470px;
+	float: left;
+	margin-top: 20px;
+}
+
+/*BEGIN LEFT COL*/
+
+#leftcol {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* background:url(../images/col_bg.png) top left repeat transparent; */
+	width:640px;
+	padding:15px;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px; 
+}
+
+#leftcol .headline {
+	font-size: 22px;
+	line-height: 18px;
+	color:#7594C0;
+	text-shadow: 1px 1px 3px #000000;
+}
+
+#leftcol .headline.subheadline {
+	font-size:20px;
+	color:#E0E5ED;
+	text-transform:capitalize;
+}
+
+#leftcol .subheadline {
+	color:#fff;
+	font-weight:bold;
+	text-transform:capitalize;
+	margin-bottom:10px;
+}
+
+#leftcol table td[width="225"] img.border {
+	margin-bottom:30px;
+}
+
+#galleria{ 
+	width: 700px; 
+	height: 400px; 
+	margin: 20px auto;
+	/*background: #000; */
+}
+
+/* The film */
+
+#the-film-video{
+	width: 680px; 
+	height: 383px; 
+	margin: 0 auto 10px auto;
+}
+
+/* Trailers And Clips */
+#trailers-and-clips{
+	width: 720px;
+	height: 405px;
+	margin: 0 auto;
+}
+
+/* Press */
+.pressList li{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.pressList a{
+	font-size: 12px;
+}
+.mainReviews{
+	width: 100%;
+	height: 250px;
+}
+.mainReviews li{
+	text-align: center;
+	margin-bottom: 20px;
+	display: none;
+}
+.mainReviews div{
+	text-transform: uppercase;
+}
+.reviewDesc{
+	font: 17px helvetica neue,sans-serif;
+}
+.reviewSource{
+	font-size: 13px;
+}
+
+.mainReviews.mrd .reviewDesc{
+	color: #f6f6f6;
+}
+
+.mainReviews.mrd .reviewSource{
+	color: #C10E0E;
+}
+
+.mainReviews.ohfg .reviewDesc{
+	color: #ff931e;
+}
+
+.mainReviews.ohfg .reviewSource{
+	color: #e26000;
+}
+
+/* Thanks */
+.mrd.thanksList a{
+	color: #BBBBBB;
+}
+.mrd.thanksList a:hover{
+	color: #C10E0E;
+}
+
+/*BEGIN RIGHT COL*/
+#rightcol, .rightcol {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 274px;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px; 
+}
+
+.rightcol_mod .watch_now_btn {
+	margin:0 0 0 25px;
+}
+
+.rightcol_mod .subheader {
+	/*background:url(../images/main_sprite.png) 0 -94px no-repeat transparent;*/
+	height: 55px;
+	width:316px;
+	position:relative;
+	top:0;
+	left: -5px;
+}
+
+.rightcol_mod .subheader.ohfg{
+	background:url(/films/one-hour-fantasy-girl/images/title.png) center center no-repeat transparent;
+	margin: -10px 0 0 -15px;
+}
+.rightcol_mod .subheader.mk{
+	background:url(/films/monster-killer/images/title.png) 5px 1px no-repeat transparent;
+}
+.pressList.ohfg a, .pressList.mrd a{
+	color: #dbdbdb;
+}
+.rightcol_mod_content #one-hour-fantasy-girl a:hover, .rightcol_mod_content #one-hour-fantasy-girl a.current, .pressList.ohfg a:hover{
+	color: #ec8401;
+}
+
+.rightcol_mod .subheader .title.img {
+	text-indent:-9999px;
+}
+
+.rightcol_mod .subheader.two {
+	background-position:0 -157px;
+	height:77px;
+}
+
+.rightcol_mod .rightcol_mod_content {
+	padding: 0 12px 12px 12px;
+}
+
+.rightcol_mod_content .right_nav {
+	list-style: none;
+}
+
+.right_nav .sublink {
+	/*background:url(../images/main_sprite.png) 0 -279px;	*/
+	padding: 7px 21px 12px;
+	margin: 0 0 3px;
+	width: 208px;
+	height: 17px;
+	overflow: hidden;
+	display: block;
+	color: #f1f1f1;
+	text-shadow: 1px 1px 3px #000000;
+	font-family:"Trebuchet MS", Tahoma, sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+.rightcol_mod_content #mothers-red-dress a:hover, .rightcol_mod_content #mothers-red-dress a.current, .pressList.mrd a:hover{
+	color: #c10e0e;
+}
+
+.rightcol_mod_content #monster-killer a:hover, .rightcol_mod_content #monster-killer a.current, .pressList.mk a:hover{
+	color: #a866c0;
+}
+
+
+.rightcol_mod_content .secondary_header {
+	color:#e1e1e1;
+	cursor: default;
+	font-size:16px;
+	text-align: center;
+	margin: 14px 0 8px;
+}
+
+.social_links {
+	list-style: none;
+	margin: 0 auto;
+	height: 35px;
+}
+.social_links.connect{
+	width: 126px;
+}
+.social_links.watch_now{
+	width: 159px;
+}
+
+.social_links li {
+	display:inline-block;
+	margin:0 7px 0 0;
+}
+
+.social_links .link {
+	background:url(/images/sidenav_icons.png) no-repeat transparent;
+	display:block;
+}
+
+.link.facebook {
+	background-position:-8px -10px;
+	width:30px;
+	height:30px;
+}
+.link.facebook:hover {
+	background-position:-8px -47px;
+}
+
+.link.twitter {
+	background-position:-43px -9px;
+	width:30px;
+	height:30px;
+}
+.link.twitter:hover {
+	background-position:-42px -47px;
+}
+
+.link.indie {
+	background-position:-87px -10px;
+	width:30px;
+	height:30px;
+}
+.link.indie:hover {
+	background-position:-87px -49px;
+}
+
+.link.youtube {
+	background-position:-132px -9px;
+	width:32px;
+	height:32px;
+}
+.link.youtube:hover {
+	background-position:-133px -47px;
+}
+
+.link.imdb {
+	background-position:-174px -10px;
+	width:48px;
+	height:30px;
+	margin-left: -5px;
+}
+.link.imdb:hover {
+	background-position:-174px -47px;
+}
+
+.link.apple{
+	background-position:-230px -6px;
+	width: 30px;
+	height: 30px;
+}
+.link.apple:hover{
+	background-position:-230px -41px;
+}
+
+.link.amazon{
+	background-position:-268px -6px;
+	width: 30px;
+	height: 30px;
+}
+.link.amazon:hover{
+	background-position:-268px -41px;
+}
+
+.link.dvd{
+	background-position:-308px -8px;
+	width: 30px;
+	height: 30px;
+}
+.link.dvd:hover{
+	background-position:-308px -44px;
+}
+
+.social_share {
+	padding: 14px 0 0 92px;
+}
+.social_share .stButton {
+	margin:0;
+}
+
+.rightcol_mod_content .also_available_on {
+	list-style:none;
+	text-align: center;
+}
+.also_available_on li {
+	margin-bottom: 10px;
+}
+
+.paypal_form {
+	text-align:center;
+}
+
+.largeTitle {
+    border-bottom: 1px solid white;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 0 0 15px;
+    text-transform: uppercase;
+}
+
+#backButtonContainer{
+	float: right;
+    height: 20px;
+    text-align: center;
+    width: 274px;
+    padding-top: 27px;
+}
+#backButton{
+	color: #E1E1E1;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+#backButton:hover{
+	color: #ffffff;
+}
+
+/* About */
+
+#about-video{
+	width: 622px; 
+	height: 350px; 
+	margin: 15px auto 0;
+}
+
+/* Profile list */
+#artistMovieTitle{
+	display: block;
+}
+#artistMovieTitle li a{
+	color: #686868;
+}
+#artistMovieTitle li a:hover, #artistMovieTitle li a.current{
+	color: #ffffff;
+}
+#artistMovieTitle li{
+	border-right: 1px solid white;
+    color: #FFFFFF;
+    cursor: default;
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.profileList{
+	float: left;
+	width: 610px;
+	overflow: auto;
+}
+.profileList li{
+	width: 180px;
+	height: 250px;
+	float: left;
+	margin: 0 15px 5px 0;
+    text-align: center;
+   	cursor: pointer;
+	font-size: 11px;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+.profileList li:hover, .profileList li.current{
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}
+
+.profileList img{
+	width: 160px;
+	height: 240px;
+}
+.profileList li{
+	position: relative;
+}
+.profileList li:before {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: 10px;
+  width: 160px;
+  height: 40%;
+  background: linear-gradient(transparent, black);
+  opacity: .9;
+}
+.profileList .title{
+	bottom: 0;
+    color: #FFFFFF;
+    margin: -40px auto 0;
+    margin-top: -40px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 101;
+    font-size: 13px;
+}
+.profileList .title span{
+	color: #b8b8b8;
+	display: block;
+	font-size: 10px;
+}
+#artists, #profileHidden{
+	display:  none;
+}
+
+.profileDesc{
+	width: 450px;
+	float: left;
+	margin-bottom: 25px;
+}
+
+.profileDesc .name, .posterName{
+	border-bottom: 1px solid white;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding: 0 0 15px;
+    text-transform: uppercase;
+}
+
+.posterName{
+	font-size: 18px;
+}
+.posterInfo{
+	font-size: 12px;
+}
+
+/* Thank list */
+.thanksList li{
+	float: left;
+	width: 186px;
+	height: 200px;
+}
+.thanksList img{
+	margin: 0 auto;
+	display: block;
+}
+.thanksList .title{
+	font-size: 13px;
+	font-color: #ffffff;
+	text-align: center;
+}
+
+/*START FOOTER*/
+#footer {
+	color:#303b4c;
+	padding:21px;
+/*	background:url(../images/footer_bg_top.png) center top no-repeat #010c1b;
+*/	font-size:8pt;
+	line-height:10pt;
+	text-align:center;
+}
+
+#footer .content {
+	width:990px;
+	margin:0 auto;
+}
+
+#footer ul li {
+	display:inline;
+}
+
+#footer a:link, #footer a:visited {
+	color:#2d3d57;
+	text-decoration:underline;
+}
+
+#footer a:hover {
+	color:#89b6f5;
+}
+
+#footer .footer_links li {
+	margin:0 20px 0 0;
+}
+
+#footer #property {
+	margin:20px 0 0 0;
+}
